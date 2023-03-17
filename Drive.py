@@ -5,7 +5,8 @@ import tty
 import termios
 import re
 
-# Set up the serial port connection
+# Set up the serial port connection remember to ensure that the arduino motor controller is connccted to the usb port of the raspberry pi
+ 
 ser = serial.Serial('/dev/ttyACM0', 57600, timeout=1)
 
 # Define a function to get a single character from the keyboard
